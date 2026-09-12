@@ -85,3 +85,4 @@ class MahasiswaController extends Controller
         echo "<p>Email: {$mahasiswa['email']}</p>";
     }
 }
+
