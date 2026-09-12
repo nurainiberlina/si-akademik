@@ -24,21 +24,24 @@ class AuthController
             echo "<p style='color:red;'>$message</p>";
         }
 
-        echo '<div style="text-align: center; margin-top: 50px;">
-        <h2>Selamat Datang di SI Akademik</h2>
-        <div style="display: inline-block; text-align: center; border:2px solid #5c4e4e99; border-radius:5px; paddingg: 50px; background-color: box-shadow: 0 2px 5px rgba(162, 35, 35, 0.1); width: 400px; height: 200px">
+        echo '
+        <div style="text-align: center; margin-top: 50px;">
+    <h2>Selamat Datang di SI Akademik</h2>
+    <div style="display: inline-block; text-align: center; border: 2px solid #5c4e4e99; border-radius: 5px; padding: 50px; width: 400px; height: 200px;">
         <form method="POST" action="/si-akademik/public/login">
-        <p>
-                <label>Username: </label> 
-                <br><input type="text" name="username" placeholder="Username" style="width: 200px;"><br>
-        </p>
-        <p>
-                <label>Password: </label> 
-                <br><input type="password" name="password" placeholder="Password" style="width: 200px;"><br>
-                <p>
-                <button type="submit">Login</button>
-                </p>
-              </form>';
+            <p>
+                <label>Username: </label>
+                <br><input type="text" name="username" placeholder="Username" style="width: 300px; height:30px; border-radius: 5px; border: 1px solid #ccc; outline: none;"><br>
+            </p>
+            <p>
+                <label>Password: </label>
+                <br><input type="password" name="password" placeholder="Password" style="width: 300px; height:30px; border-radius: 5px; border: 1px solid #ccc; outline: none;"><br>
+            </p>
+            <p>
+                <button type="submit" style="width:75%;padding:10px;background:#2962FF;color:white;border:none;border-radius:4px;cursor:pointer;" class="btn btn-sm btn-primary mb-3">Login</button>
+            </p>
+        </form>
+    </div>';
         
     }
 
